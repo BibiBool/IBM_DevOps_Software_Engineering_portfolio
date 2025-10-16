@@ -9,15 +9,15 @@ echo "accuracy is $accuracy"
 echo "accuracy is $accuracy"
 if [ -1 -le $accuracy ] && [ $accuracy -le 1 ]
 then
-           accuracy_range=excellent
+    accuracy_range=excellent
 elif [ -2 -le $accuracy ] && [ $accuracy -le 2 ]
    then
-               accuracy_range=good
+        accuracy_range=good
        elif [ -3 -le $accuracy ] && [ $accuracy -le 3 ]
        then
-                   accuracy_range=fair
-           else
-                       accuracy_range=poor
+            accuracy_range=fair
+        else
+            accuracy_range=poor
 fi
 echo "Forecast accuracy is $accuracy_range"
 row=$(tail -1 rx_poc.log)
